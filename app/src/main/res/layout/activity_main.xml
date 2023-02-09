@@ -14,20 +14,13 @@
       android:text="PPDB SMKRUS"
       android:textSize="30sp"
       android:fontFamily="@font/playfairsisplaysemibold"
-      android:textColor="@color/black"
+      android:textColor="@color/white"
       android:id="@+id/main"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rectangle"
-        app:layout_constraintBottom_toTopOf="@+id/btn_signIn"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="parent" />
 
     <Button
         android:id="@+id/btn_signIn"
