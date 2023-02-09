@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -26,23 +25,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/cd_black"
         android:padding="30dp">
-        
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Register"
             android:textSize="30dp"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/playfairdisplayregular"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="70dp"
-            android:text="Sign to Your Account"
+            android:text="Create Your Account"
             android:textColor="@color/white"
             android:textSize="15dp" />
 
@@ -51,12 +49,30 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp"
-            android:layout_marginTop="100dp"
-            >
+            android:layout_marginTop="100dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EMAIL"
+                android:text="YOUR NAME"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/shape"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="10dp"
+                android:hint="Enter your name"
+                android:id="@+id/et_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR EMAIL"
                 android:textColor="@color/white"
                 />
 
@@ -72,6 +88,7 @@
                 android:id="@+id/et_email"/>
 
             <TextView
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PASSWORD"
@@ -99,16 +116,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Not Have Account ?"
+                    android:text="Have An Account ?"
                     android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Register"
+                    android:text="Login"
                     android:textStyle="bold"
                     android:textSize="14dp"
                     android:textColor="@color/white"
-                    android:id="@+id/tv_register"/>
+                    android:id="@+id/tv_login"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -116,10 +133,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/btn_login"
-        android:text="Sign"
+        android:id="@+id/btn_register"
+        android:text="Register"
         android:textColor="@color/black"
         android:backgroundTint="@color/white"
         android:height="50dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
