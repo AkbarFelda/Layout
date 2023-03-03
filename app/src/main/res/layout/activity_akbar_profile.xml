@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Akbar_Profile">
+
+    <TextView
+        android:id="@+id/txtProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imgGuren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="330dp"
+        android:layout_height="33dp"
+        android:text="Nama = Muhammad Akbar Felda"
+        android:layout_below="@+id/imgGuren"
+        android:gravity="center"
+        android:layout_marginTop="49dp"
+        android:textSize="17sp"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtKelas"
+        android:layout_width="330dp"
+        android:layout_height="33dp"
+        android:text="Kelas = 10 PPLG 2"
+        android:layout_below="@+id/txtNama"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:textSize="17sp"
+
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtTTL"
+        android:layout_width="330dp"
+        android:layout_height="33dp"
+        android:text="TTL = Kudus, 25 November 2006"
+        android:layout_below="@+id/txtKelas"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtAsal"
+        android:layout_width="330dp"
+        android:layout_height="33dp"
+        android:text="Asal = Kudus, Jawa Tengah"
+        android:layout_below="@+id/txtTTL"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtAgama"
+        android:layout_width="330dp"
+        android:layout_height="33dp"
+        android:text="Agama = Islam"
+        android:layout_below="@+id/txtAsal"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtAgama"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

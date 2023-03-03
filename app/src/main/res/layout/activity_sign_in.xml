@@ -5,37 +5,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rectangle"
-        app:layout_constraintBottom_toTopOf="@+id/cd_black"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:id="@+id/img_rectangle"/>
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:backgroundTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/btn_login"
         android:id="@+id/cd_black"
         android:padding="30dp">
-        
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="30dp"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/playfairdisplayregular"
-            android:textColor="@color/white"
-            />
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -43,7 +32,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="70dp"
             android:text="Sign to Your Account"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15dp" />
 
         <LinearLayout
@@ -56,38 +45,37 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EMAIL"
-                android:textColor="@color/white"
+                android:text="Email"
+                android:textColor="@color/black"
                 />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_marginTop="8dp"
                 android:layout_height="45dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/black"
                 android:background="@drawable/shape"
                 android:textColorHint="@color/white"
                 android:layout_marginLeft="10dp"
-                android:hint="Enter your email"
+                android:hint=" Enter your email"
                 android:id="@+id/et_email"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PASSWORD"
-                android:textColor="@color/white"
+                android:text="Password"
+                android:textColor="@color/black"
                 />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_marginTop="8dp"
                 android:layout_height="45dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/black"
                 android:background="@drawable/shape"
                 android:textColorHint="@color/white"
                 android:layout_marginLeft="10dp"
-                android:hint="Enter your password"
-                android:drawableEnd="@drawable/ic_eye_foreground"
+                android:hint=" Enter your password"
                 android:paddingRight="10dp"
                 android:id="@+id/et_password"/>
 
@@ -99,15 +87,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Not Have Account ?"
-                    android:textColor="@color/white"/>
+                    android:text="Not Have Account?"
+                    android:textColor="@color/black"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Register"
+                    android:text=" Register"
                     android:textStyle="bold"
                     android:textSize="14dp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:id="@+id/tv_register"/>
             </LinearLayout>
         </LinearLayout>
@@ -117,9 +105,9 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/btn_login"
-        android:text="Sign"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
         android:height="50dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

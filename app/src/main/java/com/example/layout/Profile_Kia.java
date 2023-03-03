@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Profile_Kia extends AppCompatActivity {
 
-    Button btn_signIn;
-
+    Button btn_back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        btn_signIn = (Button) findViewById(R.id.btn_signIn);
-        btn_signIn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_profile_kia);
+        btn_back = (Button) findViewById(R.id.btn_Back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SignInActivity.class) );
+                Intent back = new Intent(Profile_Kia.this, Profile.class);
+                startActivity(back);
             }
         });
     }
-    }
+}
